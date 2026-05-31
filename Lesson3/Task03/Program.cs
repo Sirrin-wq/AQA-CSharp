@@ -17,7 +17,7 @@ class Program
     {
         Console.InputEncoding = Encoding.UTF8;
         Console.OutputEncoding = Encoding.UTF8;
-        
+
         Dictionary<string, string> weatherWords = new Dictionary<string, string>
         {
             { "дождь", "rain" },
@@ -31,7 +31,7 @@ class Program
             { "град", "hail" },
             { "жара", "heat" }
         };
-        
+
         Console.WriteLine("Enter a russian word about weather to get an english translation from dictionary:");
         string inputWord = Console.ReadLine();
 

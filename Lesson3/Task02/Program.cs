@@ -18,11 +18,10 @@ class Program
         if (number >= 0 && number <= 14)
         {
             Console.WriteLine($"{number} belongs to [0 - 14] group");
-        } 
+        }
         else if (number >= 15 && number <= 35)
         {
             Console.WriteLine($"{number} belongs to [15 - 35] group");
-            
         }
         else if (number >= 36 && number <= 50)
         {
