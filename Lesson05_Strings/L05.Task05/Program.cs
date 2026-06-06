@@ -26,14 +26,14 @@ class Program
     static void Main(string[] args)
     {
         string documentNum = "1234-abc-5678-def-9123-g4h5";
-        
+
         // #1 print 2 first 4 digit blocks
         string[] arr = documentNum.Split("-");
         Console.WriteLine(arr[0] + " " + arr[2]);
-        
+
         // #2 replace letter blocks with *
         Console.WriteLine(Regex.Replace(documentNum, "[A-Za-z]{3}", "***"));
-        
+
         // #3 print only letters in format yyy/yyy/y/y
         MatchCollection matches = Regex.Matches(documentNum, @"[A-Za-z]+");
 
@@ -50,13 +50,11 @@ class Program
         result.Append(matches[2]);
         result.Append("/");
         result.Append(matches[3]);
-        
+
         // #5 contains abc or not
         Console.WriteLine(documentNum.ToLower().Contains("abc"));
         
-        
         // #6 start with 555 or not
         Console.WriteLine(documentNum.StartsWith("555"));
-        
     }
 }

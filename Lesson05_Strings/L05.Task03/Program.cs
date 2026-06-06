@@ -11,19 +11,19 @@ class Program
     static void Main(string[] args)
     {
         string badDay = "Плохой день";
-        
+
         string day = badDay.Substring(6);
-        
+
         string goodDay = day.Insert(0, "Хороший");
-        
+
         goodDay = goodDay.Insert(goodDay.Length, "!!!!!!!!!");
 
         int index = goodDay.LastIndexOf("!");
 
         goodDay = goodDay.Remove(index, 1);
-        
+
         string questionableDay = goodDay.Insert(index, "?");
-        
+
         Console.WriteLine(questionableDay);
     }
 }

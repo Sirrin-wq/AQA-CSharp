@@ -20,13 +20,13 @@ class Program
 
         Console.WriteLine(beforeABC);
         Console.WriteLine(afterABC);
-        
+
         // #2
         Console.WriteLine("\nSecond method:");
         string[] abcSplitter = str.Split("abc");
         string firstPart = abcSplitter[0];
         string secondPart = abcSplitter[1];
-        
+
         Console.WriteLine(firstPart + " " + secondPart);
     }
 }

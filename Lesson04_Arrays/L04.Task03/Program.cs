@@ -25,11 +25,10 @@ class Program
             customArraySize = int.Parse(Console.ReadLine());
             Console.WriteLine($"Chosen size: {customArraySize}");
             randomArr = new int[customArraySize];
-
         }
         else if (input == 2)
         {
-            randomArraySize = (int)rand.NextInt64(1,20);
+            randomArraySize = (int)rand.NextInt64(1, 20);
             Console.WriteLine($"Generated size: {randomArraySize}");
             randomArr = new int[randomArraySize];
         }
@@ -38,12 +37,12 @@ class Program
             Console.WriteLine("No such option");
             return;
         }
-        
+
         for (int i = 0; i < randomArr.Length; i++)
         {
-            randomArr[i] = (int) rand.NextInt64(-100, 100);
+            randomArr[i] = (int)rand.NextInt64(-100, 100);
         }
-        
+
         Console.WriteLine("Resulting array: " + string.Join(", ", randomArr));
         Console.WriteLine("Max value: " + randomArr.Max());
         Console.WriteLine("Min value: " + randomArr.Min());

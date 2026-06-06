@@ -12,7 +12,7 @@ class Program
     {
         string veryWiseSentence =
             "A wise person knows that every test is not just a test, but a test of whether the test was truly worth testing.";
-        
+
         Console.WriteLine(Regex.Replace(veryWiseSentence, @"\btest\b", "testing"));
     }
 }
