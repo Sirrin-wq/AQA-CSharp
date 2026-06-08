@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Text.RegularExpressions;
 
-namespace L05.Task05;
+namespace L05.Task04;
 
 /*
 Написать программу со следующим функционалом:
@@ -54,7 +54,7 @@ class Program
         // #5 contains abc or not
         Console.WriteLine(documentNum.ToLower().Contains("abc"));
         
-        // #6 start with 555 or not
+        // #6 starts with 555 or not
         Console.WriteLine(documentNum.StartsWith("555"));
     }
 }
